@@ -1,0 +1,27 @@
+body {
+	
+}
+
+.primarySelector, .secondarySelector {
+	border:1px solid black;
+	display: inline-block;
+
+	
+}
+div[cascadingMultiSelector='true'] ul{
+	list-style-type: none;
+}
+
+div[cascadingMultiSelector='true'] ul > li{
+			
+}
+
+div[cascadingMultiSelector='true'] button{
+	width:10px;
+	
+}
+
+div[cascadingMultiSelector='true'] > .cascadingMultiSelectorButtons{
+	width:20px;
+	display: inline;
+}

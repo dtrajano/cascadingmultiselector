@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/CascadingMultiSelector.css"></link>
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/CascadingMultiSelector.js"></script>
+	</head>
+	<body>
+		<div id="cascadingMultiSelector">
+		</div>
+	</body>
+	<script type="text/javascript">
+		
+
+		var json = [{
+							key:"BR",
+							value: "Brasil",
+							childrens:[{
+								  			key: "MG",
+											value:"Minas Gerais",
+								  			childrens: [{
+												  key: "BH",
+												  value:"Belo Horizonte",
+									  			  childrens: []	
+											  },
+											  {
+												  key: "Ct",
+												  value:"Contagem",
+									  			  childrens: []	
+											  },]
+							  			}],
+						  },
+						  {
+		  		  			key: "EUA",
+							value:"Estados Unidos",
+				  			childrens: []
+						  },
+						  {
+					  		key: "CN",
+							value:"Canadá",
+				  			childrens: []
+						  }				
+					    ];
+		
+		var elementcascading = document.getElementById("cascadingMultiSelector");
+		var multiSelector1 = new CascadingMultiSelector(elementcascading,json);
+		
+	</script>
+</html>
